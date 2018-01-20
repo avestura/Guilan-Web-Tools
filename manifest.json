@@ -1,0 +1,100 @@
+{
+
+    "applications": {
+        "gecko": {
+            "id": "Web.Extensions.Guilan.University@Aryan.Software"
+        }
+    },
+    "manifest_version": 2,
+    "name": "Guilan Web Tools",
+    "version": "1.0",
+  
+    "description": "این افزونه سایت های زیر از دانشگاه گیلان را تحت تاثیر قرار میدهد و ویژگی های ظاهری و قابلیت های جدیدی را به آنها اضافه میکند:\n 1- erp.guilan.ac.ir\n 2- food.guilan.ac.ir\n 3- stu.guilan.ac.ir\n 4- ce.guilan.ac.ir",
+
+    "homepage_url": "https://0xaryan.github.io/GuilanWebTools",
+    "icons": {
+      "48": "Icons/GuilanLogo_48x48.png",
+      "96": "Icons/GuilanLogo_96x96.png",
+      "150": "Icons/GuilanLogo_150x150.png"
+    },
+
+    "background": {
+      "page": "Background/Background.html"
+    },
+
+    "permissions": [
+      "tabs",
+      "webNavigation",
+      "contextMenus",
+      "storage",
+      "*://*.guilan.ac.ir/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://food.guilan.ac.ir/*"],
+        "css": ["Styles/GuilanWebTools_Food.css"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["*://food.guilan.ac.ir/*"],
+        "js": [ "lib/jquery-3.2.1.min.js",  "Scripts/GuilanWebTools_Food.js"],
+        "all_frames": true,
+        "run_at": "document_idle"
+      },
+      {
+        "matches": ["*://stu.guilan.ac.ir/*"],
+        "css": ["Styles/GuilanWebTools_Stu.css"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["*://stu.guilan.ac.ir/*"],
+        "js": ["lib/jquery-3.2.1.min.js", "Scripts/GuilanWebTools_Stu.js"],
+        "all_frames": true,
+        "run_at": "document_idle"
+      },
+      {
+        "matches": ["*://erp.guilan.ac.ir/*"],
+        "css": ["Styles/GuilanWebTools_ERP.css"],
+        "all_frames": true,
+        "run_at": "document_start"      
+      },
+      {
+        "matches": ["*://erp.guilan.ac.ir/*"],
+        "js": ["lib/jquery-3.2.1.min.js", "Scripts/GuilanWebTools_ERP.js"],
+        "all_frames": true,
+        "run_at": "document_idle"      
+      },
+      {
+        "matches": ["*://ce.guilan.ac.ir/*"],
+        "css": ["Styles/GuilanWebTools_CE.css"],
+        "all_frames": true,
+        "run_at": "document_start"      
+      },
+      {
+        "matches": ["*://ce.guilan.ac.ir/*"],
+        "js": ["lib/jquery-3.2.1.min.js", "Scripts/GuilanWebTools_CE.js"],
+        "all_frames": true,
+        "run_at": "document_start"      
+      }
+    ],
+
+    "browser_action": {
+      "default_icon": "Icons/GuilanLogo_32x32.png",
+      "default_title": "ابزارک های دانشگاه گیلان",
+      "default_popup": "Popup/Main.html"
+    },
+
+    "web_accessible_resources": [
+      "Fonts/eot/*.eot",
+      "Fonts/ttf/*.ttf",
+      "Fonts/woff/*.woff",
+      "Fonts/woff2/*.woff2",
+      "Images/*.png",
+      "Images/ERP_NEW/*.png"
+    ]
+  
+ 
+  
+  }
