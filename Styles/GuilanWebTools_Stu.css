@@ -1,0 +1,25 @@
+@import 'Global.css';   
+
+body, * {
+    font-family: IRANSans !important;
+    box-sizing: unset;
+  }
+  input[type="submit"] {
+    border: none;
+        border-bottom-width: medium;
+        border-bottom-style: none;
+        border-bottom-color: currentcolor;
+    border-bottom: 2px solid gray;
+}
+  
+  #ctl00_maincontent_btn_s {
+    width: 147px;
+    padding: 10px;
+}
+  
+  #ctl00_maincontent_dps {
+    font-size: 9px;
+    width: 146px !important;
+    height: 25.2px;
+
+}
