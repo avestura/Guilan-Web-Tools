@@ -7,7 +7,7 @@
     },
     "manifest_version": 2,
     "name": "Guilan Web Tools",
-    "version": "1.0.3",
+    "version": "1.0.4",
   
     "description": "این افزونه سایت های زیر از دانشگاه گیلان را تحت تاثیر قرار میدهد و ویژگی های ظاهری و قابلیت های جدیدی را به آنها اضافه میکند:\n 1- erp.guilan.ac.ir\n 2- food.guilan.ac.ir\n 3- stu.guilan.ac.ir\n 4- ce.guilan.ac.ir",
 
@@ -16,10 +16,6 @@
       "48": "Icons/GuilanLogo_48x48.png",
       "96": "Icons/GuilanLogo_96x96.png",
       "150": "Icons/GuilanLogo_150x150.png"
-    },
-
-    "background": {
-      "page": "Background/Background.html"
     },
 
     "permissions": [
@@ -79,12 +75,6 @@
         "run_at": "document_start"      
       }
     ],
-
-    "browser_action": {
-      "default_icon": "Icons/GuilanLogo_32x32.png",
-      "default_title": "ابزارک های دانشگاه گیلان",
-      "default_popup": "Popup/Main.html"
-    },
 
     "web_accessible_resources": [
       "Fonts/eot/*.eot",
