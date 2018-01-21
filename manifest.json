@@ -7,7 +7,7 @@
     },
     "manifest_version": 2,
     "name": "Guilan Web Tools",
-    "version": "1.0.2",
+    "version": "1.0.3",
   
     "description": "این افزونه سایت های زیر از دانشگاه گیلان را تحت تاثیر قرار میدهد و ویژگی های ظاهری و قابلیت های جدیدی را به آنها اضافه میکند:\n 1- erp.guilan.ac.ir\n 2- food.guilan.ac.ir\n 3- stu.guilan.ac.ir\n 4- ce.guilan.ac.ir",
 
@@ -94,9 +94,9 @@
       "Images/*.png",
       "Images/*.jpg",
       "Images/*.jpeg",
-      "Images/ERP_NEW/*.png",
-      "Images/ERP_NEW/*.jpg",
-      "Images/ERP_NEW/*.jpeg",
+      "Images/ERP_New/*.png",
+      "Images/ERP_New/*.jpg",
+      "Images/ERP_New/*.jpeg",
       "Images/Food_New/*.png",
       "Images/Food_New/*.jpg",
       "Images/Food_New/*.jpeg",
